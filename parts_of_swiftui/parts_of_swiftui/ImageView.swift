@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ImageView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).font(.largeTitle)
         VStack {
             Spacer()
             Image("swiftdata").resizable()
@@ -20,18 +20,24 @@ struct ImageView: View {
                 .overlay(Circle().stroke(Color.pink, lineWidth: 6.0))
             .shadow(color: Color.gray ,radius: 6)
             
+            Text("title")
+                .font(.headline)
+            
             Spacer()
             
             HStack {
-                Spacer()
-                Image(systemName: "macbook").resizable().frame(width: 50.0, height: 30.0, alignment:.center)
-                    .foregroundColor(Color.green)
-                    .scaledToFit()
-                    .padding(.all, 25.0)
-                    .background(Color.black)
-                    .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.green, lineWidth: 6.0))
-                .shadow(color: Color.gray ,radius: 6)
+                List(0..<3) { item in
+               
+                    Image(systemName: "macbook").resizable().frame(width: 50.0, height: 30.0, alignment:.center)
+                        .foregroundColor(Color.green)
+                        .scaledToFit()
+                        .padding(.all, 25.0)
+                        .background(Color.black)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.green, lineWidth: 6.0))
+                    .shadow(color: Color.gray ,radius: 6)
+                }
+             
        
                 
             Spacer()
@@ -58,24 +64,78 @@ struct ImageView: View {
                 
             
             
-            Spacer()
-            }
             
+            }.padding(20)
+                .background(Color.gray)
             List(1..<10) { item in
                 Spacer()
-                Image(systemName: "macbook").resizable().frame(width: 50.0, height: 30.0, alignment:.center)
-                    .foregroundColor(Color.green)
+                HStack {
+                    Image(systemName: "macbook").resizable().frame(width: 50.0, height: 30.0, alignment:.center)
+                        .foregroundColor(Color.green)
+                        .scaledToFit()
+                        .padding(.all, 25.0)
+                        .background(Color.black)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.green, lineWidth: 6.0))
+                    .shadow(color: Color.gray ,radius: 6)
+                    
+                    Image(systemName: "macbook").resizable().frame(width: 50.0, height: 30.0, alignment:.center)
+                        .foregroundColor(Color.green)
+                        .scaledToFit()
+                        .padding(.all, 25.0)
+                        .background(Color.black)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.green, lineWidth: 6.0))
+                    .shadow(color: Color.gray ,radius: 6)
+                    
+                    Image(systemName: "macbook").resizable().frame(width: 50.0, height: 30.0, alignment:.center)
+                        .foregroundColor(Color.green)
+                        .scaledToFit()
+                        .padding(.all, 25.0)
+                        .background(Color.black)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.green, lineWidth: 6.0))
+                    .shadow(color: Color.gray ,radius: 6)
+                }
+            Spacer()
+                
+            }
+            
+            
+            HStack {
+                Spacer()
+                    Image(systemName: "iphone").resizable().frame(width: 30.0, height: 50.0, alignment:.center)
+                        .foregroundColor(Color.blue)
+                        .scaledToFit()
+                        .padding(.all, 25.0)
+                        .background(Color.black)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.green, lineWidth: 6.0))
+                    .shadow(color: Color.gray ,radius: 6)
+                
+                Spacer()
+                
+                Image(systemName: "iphone").resizable().frame(width: 30.0, height: 50.0, alignment:.center)
+                    .foregroundColor(Color.blue)
                     .scaledToFit()
                     .padding(.all, 25.0)
                     .background(Color.black)
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.green, lineWidth: 6.0))
                 .shadow(color: Color.gray ,radius: 6)
-            Spacer()
-            
-          
+                
+                Spacer()
+                
+                Image(systemName: "iphone").resizable().frame(width: 30.0, height: 50.0, alignment:.center)
+                    .foregroundColor(Color.blue)
+                    .scaledToFit()
+                    .padding(.all, 25.0)
+                    .background(Color.black)
+                    .clipShape(Circle())
+                    .overlay(Circle().stroke(Color.green, lineWidth: 6.0))
+                .shadow(color: Color.gray ,radius: 6)
+                Spacer()
             }
-
         }
     }
 }
