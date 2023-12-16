@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     var body: some View {
         ScrollView{
             VStack {
@@ -19,11 +19,9 @@ struct ContentView: View {
                 MyScrollView().frame(maxWidth: 600).offset(y: -150)
             }
         }
-
-     
     }
 }
 
 #Preview {
-    ContentView()
+    MainView()
 }
