@@ -17,6 +17,7 @@
 		E35435692B2E4D3900C15049 /* Programmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35435682B2E4D3900C15049 /* Programmer.swift */; };
 		E354356B2B2E4D8B00C15049 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E354356A2B2E4D8B00C15049 /* RowView.swift */; };
 		E354356E2B2E524300C15049 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E354356D2B2E524300C15049 /* ListView.swift */; };
+		E35435712B2E575900C15049 /* ListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35435702B2E575900C15049 /* ListDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		E35435682B2E4D3900C15049 /* Programmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programmer.swift; sourceTree = "<group>"; };
 		E354356A2B2E4D8B00C15049 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		E354356D2B2E524300C15049 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		E35435702B2E575900C15049 /* ListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				E354356D2B2E524300C15049 /* ListView.swift */,
+				E35435702B2E575900C15049 /* ListDetailView.swift */,
 				E354356A2B2E4D8B00C15049 /* RowView.swift */,
 			);
 			path = List;
@@ -193,6 +196,7 @@
 				E354356B2B2E4D8B00C15049 /* RowView.swift in Sources */,
 				E324F74C2B2D658600C907E8 /* MainView.swift in Sources */,
 				E324F7582B2D660600C907E8 /* MapView.swift in Sources */,
+				E35435712B2E575900C15049 /* ListDetailView.swift in Sources */,
 				E324F75C2B2D6BD800C907E8 /* MyScrollView.swift in Sources */,
 				E324F74A2B2D658600C907E8 /* complementViewsApp.swift in Sources */,
 			);
