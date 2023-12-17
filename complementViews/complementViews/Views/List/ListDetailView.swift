@@ -10,25 +10,46 @@ import SwiftUI
 struct ListDetailView: View {
     
     var programmer: Programmer
+    @Binding var favorite: Bool
     
     var body: some View {
-        VStack{
-            Image(systemName:"person.fill").resizable().frame(width: 200, height: 200).padding(.top)
+        VStack {
+            Image(systemName: "person.fill")
+                .resizable()
+                .frame(width: 200, height: 200)
+                .padding(.top)
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.mint, lineWidth: 6.0))
                 .shadow(color: Color.gray, radius: 6)
             
-            Text(programmer.name).font(.largeTitle)
-            Text(programmer.languages).font(.title)
-           
+            HStack {
+                Text(programmer.name)
+                    .font(.largeTitle)
+                
+                Button {
+                    // Aquí actualizas el estado de favoritos al tocar el botón
+                    favorite.toggle()
+                } label: {
+                    if favorite {
+                        Image(systemName: "star.fill")
+                            .foregroundColor(.yellow)
+                    } else {
+                        Image(systemName: "star")
+                            .foregroundColor(.black)
+                    }
+                }
+            }
+            
+            Text(programmer.languages)
+                .font(.title)
+            
             Spacer()
-       
         }
- 
-       
     }
 }
 
+
+
 #Preview {
-    ListDetailView(programmer: Programmer(id: 1, name: "Name 1", languages: "UIKit, Swift, SwiftUI", avatar: Image(systemName:"person.fill"), isFavorite: true))
+    ListDetailView(programmer: Programmer(id: 1, name: "user", languages: "languages", avatar: Image(systemName:"person.fill"), isFavorite: true), favorite: .constant(false))
 }

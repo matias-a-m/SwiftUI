@@ -31,11 +31,7 @@ struct RowView: View {
                 Image(systemName: "star.fill")
                     .foregroundColor(Color.yellow)
             }
-            
-           
-            
         }.padding()
-    
     }
 }
 
