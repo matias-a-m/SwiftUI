@@ -10,7 +10,7 @@ import SwiftUI
 struct ListView: View {
     
     @ObservedObject var programmersModelData = ProgrammerModelData()
-    @State private var showFavorites = false // Estado para controlar el estado del Toggle
+    @State private var showFavorites = true // Estado para controlar el estado del Toggle
     
     private var filteredProgrammers: [Programmer]{
         return programmersModelData.programmers.filter{ programmer in

@@ -19,6 +19,10 @@
 		E354356E2B2E524300C15049 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E354356D2B2E524300C15049 /* ListView.swift */; };
 		E35435712B2E575900C15049 /* ListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35435702B2E575900C15049 /* ListDetailView.swift */; };
 		E35435732B2EC27600C15049 /* ProgrammerModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35435722B2EC27600C15049 /* ProgrammerModelData.swift */; };
+		E35435762B2FAEAA00C15049 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35435752B2FAEAA00C15049 /* StateView.swift */; };
+		E35435782B2FB08900C15049 /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35435772B2FB08900C15049 /* BindingView.swift */; };
+		E354357A2B2FC4E400C15049 /* EnvironmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35435792B2FC4E400C15049 /* EnvironmentView.swift */; };
+		E354357E2B2FCE8F00C15049 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E354357D2B2FCE8F00C15049 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		E354356D2B2E524300C15049 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		E35435702B2E575900C15049 /* ListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailView.swift; sourceTree = "<group>"; };
 		E35435722B2EC27600C15049 /* ProgrammerModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammerModelData.swift; sourceTree = "<group>"; };
+		E35435752B2FAEAA00C15049 /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
+		E35435772B2FB08900C15049 /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
+		E35435792B2FC4E400C15049 /* EnvironmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentView.swift; sourceTree = "<group>"; };
+		E354357D2B2FCE8F00C15049 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				E324F7492B2D658600C907E8 /* complementViewsApp.swift */,
+				E35435742B2ECDCB00C15049 /* PropertyWrappers */,
 				E35435652B2E4C2A00C15049 /* Data */,
 				E35435642B2E4C2300C15049 /* Views */,
 				E324F74D2B2D658800C907E8 /* Assets.xcassets */,
@@ -121,6 +130,33 @@
 				E324F75B2B2D6BD800C907E8 /* MyScrollView.swift */,
 			);
 			path = Components_examples;
+			sourceTree = "<group>";
+		};
+		E35435742B2ECDCB00C15049 /* PropertyWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				E354357C2B2FCE8100C15049 /* Data */,
+				E354357B2B2FCE7B00C15049 /* View */,
+			);
+			path = PropertyWrappers;
+			sourceTree = "<group>";
+		};
+		E354357B2B2FCE7B00C15049 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E35435752B2FAEAA00C15049 /* StateView.swift */,
+				E35435772B2FB08900C15049 /* BindingView.swift */,
+				E35435792B2FC4E400C15049 /* EnvironmentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E354357C2B2FCE8100C15049 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E354357D2B2FCE8F00C15049 /* UserData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +231,13 @@
 			files = (
 				E354356E2B2E524300C15049 /* ListView.swift in Sources */,
 				E324F75A2B2D662400C907E8 /* ImageView.swift in Sources */,
+				E354357E2B2FCE8F00C15049 /* UserData.swift in Sources */,
+				E35435782B2FB08900C15049 /* BindingView.swift in Sources */,
 				E35435692B2E4D3900C15049 /* Programmer.swift in Sources */,
+				E354357A2B2FC4E400C15049 /* EnvironmentView.swift in Sources */,
 				E35435732B2EC27600C15049 /* ProgrammerModelData.swift in Sources */,
 				E354356B2B2E4D8B00C15049 /* RowView.swift in Sources */,
+				E35435762B2FAEAA00C15049 /* StateView.swift in Sources */,
 				E324F74C2B2D658600C907E8 /* MainView.swift in Sources */,
 				E324F7582B2D660600C907E8 /* MapView.swift in Sources */,
 				E35435712B2E575900C15049 /* ListDetailView.swift in Sources */,
